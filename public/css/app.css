@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    background-color: #0097A7;
+    margin: 0;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: #00BCD4;
+    padding: 5rem 0;
+}
+
+form {
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    form {
+        padding: 6rem 3rem;
+    }
+}
+form legend {
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    color: #757575;
+    font-size: 2.2rem;
+}
+
+.campo {
+    display: flex;
+    padding-top: 1rem;
+}
+.campo input {
+    flex: 1;
+}
+input[type="url"] {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 1.5rem;
+}
+input[type="submit"] {
+    padding: 1rem;
+    background-color: #FFC107;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+
+}
+@media (min-width: 768px) {
+    .campo {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.mensaje-url {
+    margin-top: 1rem;
+    max-width: 800px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #FFC107;
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+.mensaje-url p {
+    margin: 0;
+}
+.mensaje-url p a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.mensaje-url p a:hover {
+    text-decoration: underline;
+}
+.error {
+    background: red;
+    color: white;
+}
